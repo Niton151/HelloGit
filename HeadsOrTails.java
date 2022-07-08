@@ -1,11 +1,18 @@
 package HelloGit;
 
 import java.util.Random;
+import java.util.Scanner;
 
 class HeadsOrTails 
 {
     public static void main(String[] args) 
     {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Who are you?");
+        String name = sc.nextLine();
+        System.out.println("Hello, " + name + "!");
+
         System.out.println("Tossing a coin...");
 
         int headCount = 0, tailCount = 0;
